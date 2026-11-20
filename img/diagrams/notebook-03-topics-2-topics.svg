@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 820" width="960" height="820" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img">
+<title>Topic graph, step 2: build topics from clusters of chunks</title>
+<desc>Each level of clusters becomes a level of topics. The broad cluster becomes a broad topic at level 0. The tighter clusters it was split into, A and B, become subtopics at level 1. The separate cluster, C, becomes a broad topic with no subtopics. Each terminal topic stores a centroid vector. Similarity groups chunks; it doesn&#x27;t assert facts.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#495057"/></marker><marker id="arrow-0b7285" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0b7285"/></marker></defs>
+<rect width="960" height="820" fill="#ffffff"/>
+<circle cx="52" cy="46" r="22" fill="#0b7285" stroke="none" stroke-width="2"/>
+<text x="52" y="47" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central"><tspan x="52" dy="0">2</tspan></text>
+<text x="90" y="47" font-size="28" font-weight="600" fill="#212529" text-anchor="start" dominant-baseline="central"><tspan x="90" dy="0">Build topics from clusters of chunks</tspan></text>
+<text x="205" y="100" font-size="22" font-weight="600" fill="#495057" text-anchor="middle" dominant-baseline="hanging"><tspan x="205" dy="0">Clusters</tspan></text>
+<text x="730" y="100" font-size="22" font-weight="600" fill="#495057" text-anchor="middle" dominant-baseline="hanging"><tspan x="730" dy="0">Topics</tspan></text>
+<rect x="560" y="140" width="340" height="126.80000000000001" rx="10" fill="#e3fafc" stroke="#0b7285" stroke-width="2"/>
+<text x="730.0" y="185.0" font-size="24" font-weight="600" fill="#212529" text-anchor="middle" dominant-baseline="hanging"><tspan x="730.0" dy="0">Broad topic</tspan></text>
+<text x="730.0" y="220.2" font-size="22" font-weight="normal" fill="#495057" text-anchor="middle" dominant-baseline="hanging"><tspan x="730.0" dy="0">from the broad cluster</tspan></text>
+<rect x="649" y="127.0" width="161" height="26" rx="13.0" fill="#0b7285"/>
+<text x="730" y="140" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle" dominant-baseline="central">Level 0 topic</text>
+<rect x="555" y="340" width="170" height="126.80000000000001" rx="10" fill="#e3fafc" stroke="#0b7285" stroke-width="2"/>
+<text x="640.0" y="385.0" font-size="24" font-weight="600" fill="#212529" text-anchor="middle" dominant-baseline="hanging"><tspan x="640.0" dy="0">Subtopic A</tspan></text>
+<text x="640.0" y="420.2" font-size="22" font-weight="normal" fill="#495057" text-anchor="middle" dominant-baseline="hanging"><tspan x="640.0" dy="0">from A</tspan></text>
+<rect x="559" y="327.0" width="161" height="26" rx="13.0" fill="#0b7285"/>
+<text x="640" y="340" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle" dominant-baseline="central">Level 1 topic</text>
+<rect x="735" y="340" width="170" height="126.80000000000001" rx="10" fill="#e3fafc" stroke="#0b7285" stroke-width="2"/>
+<text x="820.0" y="385.0" font-size="24" font-weight="600" fill="#212529" text-anchor="middle" dominant-baseline="hanging"><tspan x="820.0" dy="0">Subtopic B</tspan></text>
+<text x="820.0" y="420.2" font-size="22" font-weight="normal" fill="#495057" text-anchor="middle" dominant-baseline="hanging"><tspan x="820.0" dy="0">from B</tspan></text>
+<rect x="739" y="327.0" width="161" height="26" rx="13.0" fill="#0b7285"/>
+<text x="820" y="340" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle" dominant-baseline="central">Level 1 topic</text>
+<rect x="560" y="590" width="340" height="126.80000000000001" rx="10" fill="#e3fafc" stroke="#0b7285" stroke-width="2"/>
+<text x="730.0" y="635.0" font-size="24" font-weight="600" fill="#212529" text-anchor="middle" dominant-baseline="hanging"><tspan x="730.0" dy="0">Broad topic</tspan></text>
+<text x="730.0" y="670.2" font-size="22" font-weight="normal" fill="#495057" text-anchor="middle" dominant-baseline="hanging"><tspan x="730.0" dy="0">from C: no subtopics</tspan></text>
+<rect x="649" y="577.0" width="161" height="26" rx="13.0" fill="#0b7285"/>
+<text x="730" y="590" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle" dominant-baseline="central">Level 0 topic</text>
+<rect x="40" y="140" width="330" height="126.80000000000001" rx="10" fill="none" stroke="#0b7285" stroke-width="3" stroke-dasharray="8 6"/>
+<text x="56" y="152" font-size="20" font-weight="600" fill="#0b7285" text-anchor="start" dominant-baseline="hanging"><tspan x="56" dy="0">broad cluster</tspan></text>
+<circle cx="60.0" cy="231.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<circle cx="118.0" cy="231.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<circle cx="176.0" cy="231.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<circle cx="234.0" cy="231.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<circle cx="292.0" cy="231.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<circle cx="350.0" cy="231.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<rect x="40" y="340" width="155" height="126.80000000000001" rx="10" fill="none" stroke="#0b7285" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="56" y="352" font-size="18" font-weight="600" fill="#0b7285" text-anchor="start" dominant-baseline="hanging"><tspan x="56" dy="0">cluster A</tspan></text>
+<circle cx="60.0" cy="431.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<circle cx="117.5" cy="431.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<circle cx="175.0" cy="431.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<rect x="215" y="340" width="155" height="126.80000000000001" rx="10" fill="none" stroke="#0b7285" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="231" y="352" font-size="18" font-weight="600" fill="#0b7285" text-anchor="start" dominant-baseline="hanging"><tspan x="231" dy="0">cluster B</tspan></text>
+<circle cx="235.0" cy="431.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<circle cx="292.5" cy="431.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<circle cx="350.0" cy="431.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<rect x="40" y="590" width="330" height="126.80000000000001" rx="10" fill="none" stroke="#0b7285" stroke-width="3" stroke-dasharray="8 6"/>
+<text x="56" y="602" font-size="20" font-weight="600" fill="#0b7285" text-anchor="start" dominant-baseline="hanging"><tspan x="56" dy="0">cluster C</tspan></text>
+<circle cx="60.0" cy="681.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<circle cx="205.0" cy="681.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<circle cx="350.0" cy="681.8" r="13" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<path d="M 205.0 266.8 L 117.5 338" fill="none" stroke="#0b7285" stroke-width="2" marker-end="url(#arrow-0b7285)"/>
+<path d="M 205.0 266.8 L 292.5 338" fill="none" stroke="#0b7285" stroke-width="2" marker-end="url(#arrow-0b7285)"/>
+<text x="205.0" y="286.8" font-size="18" font-weight="600" fill="#0b7285" text-anchor="middle" dominant-baseline="hanging"><tspan x="205.0" dy="0">split</tspan></text>
+<path d="M 372 203.4 L 558 203.4" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="462" y="169.4" font-size="22" font-weight="normal" fill="#495057" text-anchor="middle" dominant-baseline="hanging"><tspan x="462" dy="0">becomes</tspan></text>
+<path d="M 372 403.4 L 553 403.4" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="462" y="369.4" font-size="22" font-weight="normal" fill="#495057" text-anchor="middle" dominant-baseline="hanging"><tspan x="462" dy="0">becomes</tspan></text>
+<path d="M 372 653.4 L 558 653.4" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="462" y="619.4" font-size="22" font-weight="normal" fill="#495057" text-anchor="middle" dominant-baseline="hanging"><tspan x="462" dy="0">becomes</tspan></text>
+<path d="M 730.0 266.8 L 640.0 325.0" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 730.0 266.8 L 820.0 325.0" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 600.0 466.8 L 600.0 488.8" fill="none" stroke="#e67700" stroke-width="2"/>
+<circle cx="600.0" cy="500.8" r="12" fill="#e67700" stroke="none" stroke-width="2"/>
+<text x="622.0" y="501.8" font-size="20" font-weight="600" fill="#e67700" text-anchor="start" dominant-baseline="central"><tspan x="622.0" dy="0">centroid</tspan></text>
+<path d="M 780.0 466.8 L 780.0 488.8" fill="none" stroke="#e67700" stroke-width="2"/>
+<circle cx="780.0" cy="500.8" r="12" fill="#e67700" stroke="none" stroke-width="2"/>
+<text x="802.0" y="501.8" font-size="20" font-weight="600" fill="#e67700" text-anchor="start" dominant-baseline="central"><tspan x="802.0" dy="0">centroid</tspan></text>
+<path d="M 690.0 716.8 L 690.0 738.8" fill="none" stroke="#e67700" stroke-width="2"/>
+<circle cx="690.0" cy="750.8" r="12" fill="#e67700" stroke="none" stroke-width="2"/>
+<text x="712.0" y="751.8" font-size="20" font-weight="600" fill="#e67700" text-anchor="start" dominant-baseline="central"><tspan x="712.0" dy="0">centroid</tspan></text>
+<text x="480.0" y="790" font-size="22" font-weight="600" fill="#212529" text-anchor="middle" dominant-baseline="hanging"><tspan x="480.0" dy="0">Each level of clusters becomes a level of topics. Terminal topics store a centroid.</tspan></text>
+</svg>
